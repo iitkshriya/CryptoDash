@@ -2,6 +2,7 @@
   <div v-if="coins" class="container">
     <h2>{{ coins[0].name }} Details</h2>
     <DetailCard :currency="coins[0]"/>
+    <CurrencyLiveChart :symbol="coins[0].symbol" />
   </div>
 </template>
 
